@@ -8,6 +8,9 @@ if (import.meta.env) {
   supabaseKey = import.meta.env.VITE_SUPA_BASE_KEY;
 }
 
+
+console.log(import.meta.env)
+
 const API = createClient(supabaseUrl, supabaseKey);
 
 export { API, supabaseUrl, supabaseKey };
